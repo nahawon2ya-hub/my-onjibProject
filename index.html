@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <base href="/onjib-project/" />
+    <link rel="stylesheet" href="assets/css/index.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Chart.js CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script defer src="assets/js/common.js"></script>
+    <script defer src="assets/js/index.js"></script>
+</head>
+
+<body>
+    <!-- 메인 -->
+
+    <!------------------------ 헤더 ---------------------------->
+
+    <div id="site-header"></div>
+
+    <main>
+        <div class="main-spot">
+            <div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/img/main/main-slide-img1.png">
+                                <source media="(min-width: 300px)" srcset="assets/img/main/main-slide-moblie1.png">
+                                <img src="assets/img/main/main-slide-img1.png" alt="People">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/img/main/main-slide-img2.png">
+                                <source media="(min-width: 300px)" srcset="assets/img/main/main-slide-moblie2.png">
+                                <img src="assets/img/main/main-slide-img2.png">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/img/main/main-slide-img3.png">
+                                <source media="(min-width: 300px)" srcset="assets/img/main/main-slide-moblie3.png">
+                                <img src="assets/img/main/main-slide-img3.png" alt="People">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/img/main/main-slide-img4.png">
+                                <source media="(min-width: 300px)" srcset="assets/img/main/main-slide-moblie4.png">
+                                <img src="assets/img/main/main-slide-img4.png" alt="People">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="chart-spot" id="chartSection">
+            <div>
+                <canvas id="myChart" class="myChart"></canvas>
+            </div>
+            <div class="chart-text">
+                <p><img src="assets/img/main/dog-cat.png" alt=""></p>
+                <div>
+                    <span>연</span>
+                    <span>8만마리</span>
+                </div>
+                <div>
+                    <span>하루 약</span>
+                    <span>220마리</span>
+                </div>
+                <div>
+                    <span>매</span>
+                    <span>6분마다 1마리</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-spot">
+            <div>
+                <div>
+                    <h2>온집 소식 <img src="assets/img/common/icon-home.png" alt=""></h2>
+                    <p>인스타그램에서 온집의 활동 소식을 확인해 보세요</p>
+                    <p><img src="assets/img/common/icon_insta.png" alt="">onjib_ad</p>
+                </div>
+                <div class="slides">
+                    <div class="swiper mySwiperNews">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide news"><a
+                                    href="https://www.instagram.com/p/DVfBQNggfP_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                                    target="_blank"><img src="assets/img/main/news-img1.png" alt=""></a></div>
+                            <div class="swiper-slide"><a
+                                    href="https://www.instagram.com/p/DVfBWAGgayW/?utm_source=ig_web_copy_link"
+                                    target="_blank"><img src="assets/img/main/news-img2.png" alt=""></a>
+                            </div>
+                            <div class="swiper-slide"><a
+                                    href="https://www.instagram.com/p/DVfBalvATWI/?utm_source=ig_web_copy_link"
+                                    target="_blank"><img src="assets/img/main/news-img3.png" alt=""></a>
+                            </div>
+                            <div class="swiper-slide"><a
+                                    href="https://www.instagram.com/p/DVfBgUigcP0/?utm_source=ig_web_copy_link"
+                                    target="_blank"><img src="assets/img/main/news-img4.png" alt=""></a>
+                            </div>
+                            <div class="swiper-slide"><a
+                                    href="https://www.instagram.com/p/DVfBjteAaBI/?utm_source=ig_web_copy_link"
+                                    target="_blank"><img src="assets/img/main/news-img5.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="adoption-list">
+            <div class="ani">
+                <h2>
+                    <img src="assets/img/main/heart.png" alt="">
+                    <b>입양</b>을 기다려요
+                    <img src="assets/img/main/heart.png" alt="">
+                </h2>
+                <p>머무는 곳은 보호소지만 마음은 집을 향해 있어요</p>
+            </div>
+            <p class="ani main-line"><img src="assets/img/common/main-line.svg" alt=""></p>
+            <div class="adoption-items">
+                <!-- <figure>
+                    <p><img src="./assets/img/main/adoption-list-img7.png" alt="프로필 아이콘" title="프로필 아이콘"></p>
+                    <b>두리(1살) / 암컷</b>
+                    <figcaption>
+                        <p>서울시 동대문구 어느 시장에서 구조되어 센터 입소[보호 센터] : 서울시립동물복지지원센터 마포센터[성격]• 사람(타동물) 친화력 : 사람을 무척 좋아하며 다른 개들과도 잘 지냅니다. 다만 소유욕이 있고 질투가 있어 먹을 때나 특정 장난감에 대한 집착이 있을 때 주의해야 합니다.• 새로운 환경 적응 : 사람이 있다면 크게 힘들지 않게 적응을 잘 할 거예요. 특히 새로운 공간에서는 호기심이 발동해서 뽈뽈뽈 잘 돌아다니기도 해요.• 에너지 레벨 : 중하/ 자기가 익숙한 공간에서는 많이 움직이지도 않고 차분한 편이지만 산책도 어느정도 잘하고 보통 어느 친구들처럼 무난한 아이입니다.• 좋아(싫어)하는 것 : 사람과 함께하는 공놀이도 좋아하고 스스로도 뾱뾱이 소리나는 솜공을 가지고 노는 것을 좋아하기도 해요. 싫어하는 것은 아무래도 사람과 헤어지는 것.• 필요 교육 : 패드배변 훈련부터 기본 산책훈련(자동줄을 사용한 듯 지그재그로 마음대로 움직예요)등 하나씩 알려주세요.• 기타 특징중성화 수술 완료.  센터에 체류하고 있는 동안 종합 백신및 내외부 구충 등 하고 있습니다.[이상적인 가정]-사람을 너무 좋아하는 친구이니 집에 상주할 수 있는 식구가 많은 다인 가정 등-초등이상의 자녀가 있는 가정 등 어느 나이대도 상관 없는 가정 등-덩치가 매우 큰 반려견이 있는게 아닌 이상 차롬과 비슷한 체구가 있는 사회성 좋은 반려견이 있는 가정도 적합-방음이 잘 되거나 내부 소음에 대해 예민하지 않는 주변환경(아파트나 빌라)을 가진 가정[담당자들의 애정 한마디]항상 밝게 웃으며 귀엽게 웃어주는 우리</p>
+                    </figcaption>
+                </figure> -->
+            </div>
+            <p class="ani main-line"><img src="assets/img/common/main-line.svg" alt=""></p>
+            <a href="./page/adoption/adoption.html" class="ani"><img class="more-btn"
+                    src="./assets/img/main/more-btn.png" alt=""></a>
+        </section>
+    </main>
+
+
+
+    <!------------------------ 팝업 ---------------------------->
+    <div class="popup">
+        <div><img src="assets/img/main/main-popup.png" alt=""></div>
+        <div class="popup-btn">
+            <p>오늘 하루 보지 않기</p>
+            <p>닫기</p>
+        </div>
+    </div>
+
+    <!------------------------ 플로팅 도구 ---------------------------->
+
+
+    <div id="floating-btn"></div>
+
+    <!------------------------ 푸터 ---------------------------->
+
+    <div id="site-footer"></div>
+
+</body>
+
+</html>

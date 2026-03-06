@@ -1,0 +1,223 @@
+@import url(../common/common.css);
+
+.rvs_subMain{
+    padding: 230px 0 100px;
+    max-width: 1420px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.rvs_S2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../../img/common/main-line.png) 0 bottom no-repeat;
+    padding-bottom: 70px;
+    gap: 35px;
+}
+.rvs_S2 > div{
+    font-size: 100px;
+    font-family: 'MemomentKkukkukk';
+    color: #3A302E;
+    position: absolute;
+}
+.paw{
+    position: relative;
+    right: -190px; top: -40px;
+}
+
+.swiper.mySwiper{
+    width: 1000px; height: 500px;
+    margin: 100px auto 50px;
+}
+.swiper.mySwiper img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+.swiper-navigation-icon>path{
+    fill: #D9D9D9;
+}
+.swiper-pagination-bullet-active{
+    background: #D9D9D9;
+}
+
+.rvs_S4{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 1000px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #3A302E;
+    font-family: 'GmarketSans';
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+.rvs_S4 > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.rvs_S4 > div > div{
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+}
+.rvs_S4 > p{
+    line-height: 180%;
+}
+
+.rvs_S5{
+    width: 1000px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.rvs_S5 > div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3A302E;
+    background: url(../../img/common/main-line.svg) 0 bottom no-repeat;
+}
+.rvs_S5 > div:nth-of-type(1) > div{
+    font-size: 40px;
+    font-family: 'GmarketSans';
+    font-weight: 500;
+}
+.rvs_S5 > div:nth-of-type(1) > p{
+    fill: #3A302E;
+    padding: 0;
+}
+.rvs_S5 > div:nth-of-type(2){
+    display: flex;
+    justify-content: space-between;
+}
+.rvs_S5 > div:nth-of-type(2) > input{
+    width: 90%;
+    border: none;
+    font-size: 20px;
+    font-family: 'GmarketSans';
+    font-weight: 500;
+}
+.rvs_S5 > div:nth-of-type(2) > button{
+    width: 100px;
+    max-width: 100%;
+    height: 65px;
+    padding: 0;
+    font-family: "Paperlogy";
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #f8f8f8;
+    color: #3A302E;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.rvs_S5 > div:nth-of-type(2) > button:hover{
+    background-color : #FF9D00;
+    color: white;
+    transition: 0.3s;
+}
+#commentDisplayArea {
+    width: 100%;
+    margin-top: 30px;
+}
+.simple-comment {
+    margin-bottom: 30px; 
+    font-family: 'GmarketSans'
+}
+.simple-name {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    color: #888;    
+    margin-bottom: 8px;
+}
+.simple-content {
+    margin: 0;
+    font-size: 18px; 
+    font-weight: 500;
+    color: #3A302E;
+    line-height: 1.4;
+    word-break: break-all;
+}
+
+.backBtn{ 
+    width: 153px;
+    display: flex;
+    align-items: center;
+    border: none; 
+    background: none;
+    font-size: 30px;
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    color: #3A302E;
+    gap: 5px;
+    cursor: pointer;
+    padding-top: 50px;
+    transition: 0.3s;
+}
+.backBtn svg path {
+    transition: 0.3s;
+    fill: #3A302E;
+    stroke: #3A302E;
+}
+.backBtn:hover {
+    stroke: #FF9D00;
+    color: #FF9D00;
+}
+.backBtn:hover svg path {
+    stroke: #FF9D00;
+    fill: #FF9D00;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .rvs_subMain { padding: 230px 50px 100px; }
+    .swiper.mySwiper {width: 100%; margin: 70px auto;}
+    .rvs_S2 { padding-bottom: 30px; }
+    .rvs_S2 > div { font-size: 50px; }
+    .paw { right: -105px; top: -30px; }
+    .paw > svg { width: 56px; height: 54px; }
+    .rvs_SBM2 > div { font-size: 70px; }
+    .rvs_SBM3 { width: 100%; }
+    .rvs_S4 { width: 100%; margin: 60px auto; }
+    .rvs_S5 { width: 100%; }
+    .rvs_S5 > div:nth-of-type(2) > button { height: 50px; width: 100px; }
+    .backBtn{ margin: 0;}
+}
+
+
+@media (max-width: 768px) {
+    .rvs_subMain { padding: 230px 15px 100px; }
+    .rvs_S2 { padding-bottom: 20px; }
+    .rvs_S2 > div { font-size: 30px; }
+    .paw { right: -60px; top: -12px; }
+    .paw > svg { width: 26px; height: 24px; }
+    .swiper.mySwiper { height: 300px; margin: 30px auto; margin: 50px auto 40px; }
+    .rvs_S4 { padding: 30px 20px; font-size: 14px; margin: 30px auto; }
+    .rvs_S4 > div > div { flex-wrap: wrap; justify-content: center; }
+    .rvs_S5 { padding-bottom: 0px; }
+    .rvs_S5 > div:nth-of-type(1) > div { font-size: 24px; }
+    .rvs_S5 > div:nth-of-type(1) > p > svg{ width: 40px; }
+    .rvs_S5 > div:nth-of-type(2) { flex-direction: column; gap: 10px; }
+    .rvs_S5 > div:nth-of-type(2) > input { width: 100%; height: 45px; padding: 0 10px; }
+    .rvs_S5 > div:nth-of-type(2) > button { width: 30%; margin: 15px auto; height: 50px; font-size: 20px;}
+    .backBtn{ margin: 0; font-size: 20px; display: none;}
+    .backBtn > svg{ width: 25px; height: 20px; }
+    
+    .floating-btn{ display: none;}
+    :root { --swiper-navigation-size: 20px;}
+}
+

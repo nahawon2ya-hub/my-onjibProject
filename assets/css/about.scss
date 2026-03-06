@@ -1,0 +1,541 @@
+@import url('common/font.css');
+@import url('common/common.css');
+
+.about {
+    overflow: hidden;
+
+
+
+
+    //observe
+    //about center
+    .about-center>div:nth-of-type(1),
+    .about-center img {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: 0.7s ease;
+    }
+
+    .about-center>div:nth-of-type(1).active,
+    .about-center>div:nth-of-type(2) img.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    // center-info
+    .center-info>div:nth-of-type(1) {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .center-info>div:nth-of-type(1).active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .center-info article:nth-of-type(odd) p,
+    .center-info article:nth-of-type(odd)>div {
+        opacity: 0;
+        transform: translateX(-40px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .center-info article:nth-of-type(even) p,
+    .center-info article:nth-of-type(even)>div {
+        opacity: 0;
+        transform: translateX(40px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .center-info article p.active,
+    .center-info article>div.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    // center-space
+    .center-space div:nth-of-type(1),
+    .center-space figure {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .center-space div:nth-of-type(1).active,
+    .center-space figure.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .center-space>div:nth-of-type(1).active .center-line {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    padding: 230px 0;
+
+    b {
+        color: #FF9D00;
+        font-weight: 500;
+    }
+
+    .about-banner {
+        position: relative;
+        width: 75%;
+        aspect-ratio: 1420 / 660;
+        margin: 0 auto;
+        border-radius: 20px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+        background: url(../img/about/banner-about.png) center / cover no-repeat;
+        margin-bottom: 110px;
+
+        >div {
+
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            gap: clamp(3px, 2vw, 20px);
+            position: absolute;
+            top: 57%;
+            left: 10%;
+
+            h2 {
+                font-family: 'Hakgyoansim_PosterB';
+                font-size: clamp(30px, 6vw, 97px);
+
+            }
+
+            p {
+                font-family: 'Paperlogy';
+                font-size: clamp(16px, 2.8vw, 54px);
+            }
+        }
+    }
+
+
+    .about-center {
+        text-align: center;
+        height: 100vh;
+        background: url(../img/about/about-center-backgound.png) 0 0 / cover no-repeat;
+
+
+
+
+        >div:nth-of-type(1) {
+            display: flex;
+            flex-direction: column;
+            gap: 110px 0;
+            padding: 6% 0;
+
+
+
+            h2 {
+                font-family: 'MemomentKkukkukk';
+                font-size: clamp(40px, 6vw, 100px);
+                font-weight: 500;
+                color: #3A302E;
+                position: relative;
+            }
+
+            h2::before {
+                position: absolute;
+                content: '';
+                background: url(../img/about/icon-foot-01.png) no-repeat center / contain;
+                left: 28%;
+                top: -1em;
+                width: 1.5em;
+                height: 1.6em;
+
+            }
+
+            h2::after {
+                position: absolute;
+                content: '';
+                background: url(../img/about/icon-foot-02.png) no-repeat center / contain;
+                right: 30%;
+                top: 0.8em;
+                width: 0.7em;
+                height: 0.7em;
+
+            }
+
+            p {
+                font-family: 'Paperlogy';
+                font-weight: 200;
+                font-size: clamp(16px, 1.5vw, 28px);
+
+
+
+            }
+
+
+        }
+
+        >div:nth-of-type(2) {
+            display: flex;
+            gap: 5%;
+            margin: 0 auto;
+            justify-content: center;
+
+            img {
+                width: clamp(200px, 18vw, 370px);
+                max-width: 100%;
+                height: auto;
+                flex: 0 1 auto;
+            }
+        }
+    }
+
+    .center-info {
+
+        padding: 150px 0;
+
+        >div:nth-of-type(1) {
+            width: 75%;
+            margin: 0 auto;
+            overflow: hidden;
+
+            h2 {
+                font-size: clamp(26px, 3vw, 50px);
+                font-family: 'Hakgyoansim_PosterB';
+                color: #3A302E;
+                position: relative;
+                padding-top: 50px;
+
+                b {
+                    color: #FF9D00;
+                }
+            }
+
+            h2::before {
+                position: absolute;
+                content: '';
+                background: url(../img/about/icon-foot-03.png) no-repeat center / contain;
+                width: 1em;
+                height: 1em;
+                right: 26%;
+                top: -0.1em;
+            }
+
+            .center-line {
+                width: 100%;
+                height: 12px; // 줄 이미지 높이
+                margin: 0 auto;
+                background: url(../img/common/main-line.png) no-repeat center / contain;
+                padding-top: 30px;
+
+            }
+        }
+
+        >div:nth-of-type(2) {
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 120px;
+            padding: 176px 0;
+
+            article {
+                display: flex;
+                justify-content: center;
+                gap: 0 60px;
+                align-items: center;
+
+                >p {
+                    width: 45%;
+                }
+
+                img {
+                    width: 100%;
+                }
+
+                div {
+                    width: 45%;
+                    background-color: #F3F3F3;
+                    max-width: 476px;
+                    padding: 6% 3%;
+                    border-radius: 37.41px;
+                    font-family: 'GmarketSans';
+                    font-size: clamp(18px, 2vw, 30px);
+                    font-weight: 500;
+                    // line-height: 1.9;
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+                    line-height: clamp(1.6, 1.8, 1.9);
+                }
+            }
+        }
+    }
+
+
+    .center-space {
+        width: 75%;
+        text-align: center;
+        margin: 0 auto;
+
+        .center-line {
+            width: 100%;
+            height: 12px; // 줄 이미지 높이
+            margin: 0 auto;
+            background: url(../img/common/main-line.png) no-repeat center / contain;
+            padding-top: 30px;
+
+        }
+
+        >div:nth-of-type(1) {
+
+            h2 {
+                font-family: 'MemomentKkukkukk';
+                font-weight: 500;
+                font-size: clamp(24px, 3vw, 52px);
+                letter-spacing: 3%;
+                position: relative;
+            }
+
+            h2::before {
+                position: absolute;
+                content: '';
+                background: url(../img/about/icon-heart.png) no-repeat center / contain;
+                width: 1em;
+                height: 1em;
+                right: 13%;
+                top: -0.8em;
+            }
+
+        }
+
+        >div:nth-of-type(2) {
+            padding-top: 70px;
+            display: flex;
+            text-align: center;
+            gap: 3%;
+
+            figure {
+                width: 100%;
+
+                >p {
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+
+
+            figcaption {
+
+                p {
+                    padding: 20px 0;
+                }
+
+
+
+                span {
+                    font-family: 'Paperlogy';
+                    font-weight: 200;
+                    font-size: 18px;
+                    line-height: 1.6;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+// ------------------------------------------------------
+// 테블릿
+// ------------------------------------------------------
+
+@media screen and (min-width:768px) and (max-width:960px) {
+
+    .about {
+        padding: 230px 0 100px;
+
+        .about-banner {
+            margin-bottom: 0;
+        }
+
+        .about-center {
+
+            >div:nth-of-type(1) {
+                gap: 50px 0 !important;
+            }
+        }
+
+        .about-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .center-info {
+            padding: 0;
+
+            >div:nth-of-type(1) {
+                h2::before {
+                    display: none;
+                }
+            }
+
+            >div:nth-of-type(2) {
+                padding: 80px 0;
+            }
+        }
+
+        .center-space {
+            margin-top: 50px;
+
+            >div:nth-of-type(1) {
+                h2::before {
+                    right: 8%;
+                }
+            }
+
+            >div:nth-of-type(2) {
+
+                figure:nth-of-type(3) figcaption>p img {
+                    width: 99%;
+                    height: 48px;
+                }
+            }
+
+
+        }
+    }
+
+
+}
+
+
+
+// ------------------------------------------------------
+// 모바일
+// ------------------------------------------------------
+@media screen and (max-width: 480px) {
+
+    .about {
+        padding: 230px 0 100px;
+
+        .about-banner {
+            margin-bottom: 0;
+            width: 90%;
+        }
+
+        .about-center {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            >div:nth-of-type(1) {
+                gap: 50px 0 !important;
+
+
+                h2::before {
+                    left: 12%;
+                }
+
+                h2::after {
+                    right: 17%;
+                }
+
+                p {
+                    margin: 0 30px;
+                }
+            }
+
+            >div:nth-of-type(2) {
+
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    width: 300px;
+                }
+            }
+
+
+
+            .mySwiper {
+                width: 100%;
+                height: 400px;
+                position: relative;
+
+                .swiper-pagination {
+                    bottom: -3px;
+                    --swiper-theme-color: #FF9D00;
+                }
+            }
+
+            .mySwiper .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 90%;
+                    display: block;
+                    object-fit: cover;
+                }
+            }
+        }
+
+
+        .center-info {
+            padding: 0;
+
+            >div:nth-of-type(1) {
+                width: 90%;
+
+                h2::before {
+                    right: 0%;
+                    top: 1em;
+                }
+            }
+
+            >div:nth-of-type(2) {
+                width: 90%;
+                padding: 50px 0;
+
+                article {
+                    flex-direction: column;
+
+                    >p {
+                        width: 100%;
+                    }
+
+                    >div {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .center-space {
+            width: 90%;
+            margin-top: 50px;
+
+            >div:nth-of-type(1) {
+
+                h2::before {
+                    right: 0;
+                    top: -0.9em;
+                }
+            }
+
+            >div:nth-of-type(2) {
+                padding-top: 50px;
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+        }
+    }
+
+}

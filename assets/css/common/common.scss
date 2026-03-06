@@ -1,0 +1,481 @@
+@import url('./reset.css');
+@import url('./font.css');
+
+
+.bnf_M1 {
+    margin: 0px auto 150px;
+    width: 1420px;
+    height: 660px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.bnf_M1>p {
+    margin: 0;
+    height: 100%;
+}
+
+.bnf_M1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: center;
+}
+
+.bnf_M1>div,
+.bnf_M1 .text-box {
+    margin: 0;
+    position: absolute;
+    bottom: 100px;
+    left: 90px;
+    font-size: 97.74px;
+    font-weight: bold;
+    -webkit-text-stroke: 4px rgb(58, 48, 46);
+    color: white;
+    paint-order: stroke fill;
+    text-shadow: 0 7px 6px rgba(0, 0, 0, 0.3);
+    font-family: 'Hakgyoansim_PosterB';
+}
+
+.bnf_M1 .text-box .title {
+    font-size: 97.74px;
+    display: block;
+}
+
+.bnf_M1 .text-box .sub {
+    font-size: 40px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+// ------------------------------------------------------
+// header
+// ------------------------------------------------------
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: transform .3s ease;
+
+    &.hide {
+        transform: translateY(-100%);
+    }
+}
+
+header::after {
+    content: '';
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: white;
+    transition: 0.5s;
+}
+
+header.active::after {
+    height: 100%;
+}
+
+header nav ul li:hover>a {
+    font-weight: 500;
+}
+
+header nav ul li .dropdown a:hover {
+    font-weight: 500;
+}
+
+.header-inner {
+    max-width: 1424px;
+    margin: 0 auto;
+    font-family: 'GmarketSans';
+    font-weight: 300;
+
+}
+
+.header-inner>div {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.header-inner>p {
+    margin: 0 auto;
+    display: block;
+}
+
+.header-inner>p.hidden {
+    display: none;
+}
+
+.header-inner>div>nav>ul {
+    display: flex;
+    gap: 0 30px;
+    list-style: none;
+    text-align: center;
+
+}
+
+.dropdown {
+    // display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    gap: 14px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+nav:hover .dropdown {
+    max-height: 200px;
+}
+
+.side-menu {
+    display: none;
+}
+
+
+
+// ------------------------------------------------------
+// footer
+// ------------------------------------------------------
+
+
+footer {
+    width: 100%;
+    padding: 90px 0;
+    background-color: #3A302E;
+    color: white;
+    font-family: 'GmarketSans';
+    font-weight: 300;
+}
+
+footer b {
+    padding-right: 4px;
+    font-family: 'GmarketSans';
+    font-weight: 500;
+}
+
+.footer-inner {
+    max-width: 1424px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer-inner span {
+    padding-bottom: 49px;
+    display: block;
+}
+
+.footer-inner ul {
+    line-height: 1.8;
+}
+
+.sns {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 14px;
+    gap: 0 6px;
+
+}
+
+
+
+
+
+
+// ------------------------------------------------------
+// floating-btn
+// ------------------------------------------------------
+
+
+.floating-btn {
+    display: block;
+    position: fixed;
+    right: 90px;
+    bottom: 100px;
+    z-index: 10;
+
+    span {
+        display: block;
+        padding: 16px 0;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+@media (max-width:1420px) {
+
+
+    .bnf_M1 {
+        margin: 0px auto 150px;
+        max-width: 90%;
+        aspect-ratio: 1420 / 660;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .bnf_M1>p {
+        margin: 0;
+        height: 100%;
+    }
+
+    .bnf_M1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+
+    }
+
+    .bnf_M1>div,
+    .bnf_M1 .text-box {
+        margin: 0;
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        font-size: 8vw;
+        font-weight: bold;
+        -webkit-text-stroke: 4px rgb(58, 48, 46);
+        color: white;
+        paint-order: stroke fill;
+        text-shadow: 0 7px 6px rgba(0, 0, 0, 0.3);
+        font-family: 'Hakgyoansim_PosterB';
+    }
+    .bnf_M1 .text-box .title{
+        font-size: 8vw;
+    }
+    .bnf_M1 .text-box .sub {
+        font-size: 4.5vw;
+        line-height: 1.4;
+    }
+}
+
+
+
+
+// ------------------------------------------------------
+// 모바일
+// ------------------------------------------------------
+
+
+@media screen and (max-width: 960px) {
+    .side-menu {
+        display: block;
+        z-index: 2001;
+    }
+
+    .header-inner {
+        >div>a {
+            img {
+                width: 85%;
+            }
+        }
+    }
+
+    header nav {
+        display: block; // 숨김은 transform으로 처리할 거라 display는 block 유지
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transform: translateX(100%);
+        transition: transform .3s ease;
+        z-index: 2000;
+        padding: 110px 10%; // 헤더 높이에 맞춰 조절
+        box-shadow: -10px 0 30px rgba(0, 0, 0, .08);
+    }
+
+    /* 열렸을 때 */
+    header.m-open nav {
+        transform: translateX(0);
+    }
+
+    /* 메뉴 세로 정렬 */
+    .header-inner>div>nav>ul {
+        flex-direction: column;
+        gap: 18px 0;
+        align-items: flex-start;
+        text-align: left;
+        font-size: 25px;
+    }
+
+    .header-inner>div {
+        align-items: center; // 모바일에서 로고/햄버거 정렬 자연스럽게
+    }
+
+    /* 모바일에서는 hover로 dropdown 펼치지 않기 */
+    nav:hover .dropdown {
+        max-height: 0;
+    }
+
+    /* dropdown 기본 닫힘 */
+    header nav ul li .dropdown {
+        padding-top: 12px;
+        gap: 10px;
+        align-items: flex-start;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .25s ease;
+    }
+
+    /* li에 open 클래스가 붙으면 dropdown 펼치기 */
+    header nav ul li.open .dropdown {
+        max-height: 240px;
+    }
+
+    header nav ul>li.active>a {
+        font-weight: 500;
+    }
+
+    /* 모바일에서 서브메뉴 링크 들여쓰기 */
+    header nav ul li .dropdown a {
+        padding-left: 10px;
+    }
+
+    /* 모바일 열렸을 때 배경 클릭용 오버레이(선택) */
+    header::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, .35);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .3s ease;
+        z-index: 1500;
+    }
+
+    header.m-open::before {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+
+
+    // ------------------------------------------------------
+    // floating-btn
+    // ------------------------------------------------------
+
+
+    .floating-btn {
+        display: block;
+        right: 3% !important;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .floating-btn {
+        display: none;
+    }
+
+    .header-inner {
+        width: 90%;
+        overflow: hidden;
+    }
+
+    .footer-inner {
+        width: 90%;
+        align-items: flex-start;
+        flex-direction: column;
+
+        .sns {
+            justify-content: flex-start;
+            padding: 14px 0;
+        }
+    }
+
+    .floating-btn {
+        img {
+            width: 80%;
+            right: 1% !important;
+        }
+    }
+
+
+     .bnf_M1 {
+        margin: 0px auto 60px;
+        max-width: 90%;
+        aspect-ratio: 1420 / 660;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .bnf_M1>p {
+        margin: 0;
+        height: 100%;
+    }
+
+    .bnf_M1>p>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+
+    }
+
+    .bnf_M1>div,
+    .bnf_M1 a .text-box {
+        margin: 0;
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        font-size: 8vw !important;
+        font-weight: bold;
+        -webkit-text-stroke: 4px rgb(58, 48, 46);
+        color: white;
+        paint-order: stroke fill;
+        text-shadow: 0 7px 6px rgba(0, 0, 0, 0.3);
+        font-family: 'Hakgyoansim_PosterB';
+    }
+    .text-box .title {
+        font-size: 8vw !important;
+        margin-bottom:5%;
+    }
+    .text-box .sub {
+        font-size: 4.5vw;
+        line-height: 1.4;
+    }
+}
+
+
+// 윤서 - 마진 
+
+.margin {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+* {
+    box-sizing: border-box;
+}
