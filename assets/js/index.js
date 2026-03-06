@@ -393,11 +393,11 @@ async function fetchJson(url) {
 
 async function loadData() {
     const data_list_img = await fetchJson(
-        'https://onjib-seoul-proxy.parksoyoung9750.workers.dev/vPetImg/1/260'
+        'https://dawn-snowflake-5ff6.nahawon2ya.workers.dev/vPetImg/1/260'
     );
 
     const data_list = await fetchJson(
-        'https://onjib-seoul-proxy.parksoyoung9750.workers.dev/vPetInfo/1/28'
+        'https://dawn-snowflake-5ff6.nahawon2ya.workers.dev/vPetInfo/1/28'
     );
 
     function extractIntakeBackground(pureText) {

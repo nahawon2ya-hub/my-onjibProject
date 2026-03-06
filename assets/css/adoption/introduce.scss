@@ -3,7 +3,7 @@
 
 html,
 body {
-    overflow-x: hidden;
+    
 }
 
 .section-header {
@@ -138,7 +138,7 @@ body {
     color: rgb(58, 48, 46);
     max-width: 1420px;
     width: 100%;
-    margin: 65px auto 330px;
+    margin: 65px auto 200px;
 
     display: flex;
     flex-direction: column;
@@ -146,7 +146,7 @@ body {
     gap: 160px;
     line-height: 50px;
 
-    font-family: MemomentKKukkukk;
+    font-family: 'MemomentKKukkukk';
     font-size: 24px;
 
 }
@@ -240,27 +240,35 @@ body {
     font-size: 22px;
 }
 
-.apply-btn {
-    font-family: 'MemomentKkukkukk';
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 30px;
-    background-color: rgb(255, 157, 0);
-    color: #fff;
-    font-size: 26px;
+.apply-btn{
+    display: flex;
+    justify-content: center
+}
+.apply-btn > button {
+    width: 250px;
+    max-width: 100%;
+    height: 80px;
+    padding: 0;
+    font-family: "Paperlogy";
+    font-size: 30px;
+    font-weight: 600;
+    background-color: #f8f8f8;
+    color: #3A302E;
     border: none;
     border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: transform 0.2s ease;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-
-    margin-bottom: 225px;
+    transition: 0.3s;
 
     &:active {
         transform: translateY(3px)
     }
 }
+.apply-btn > button:hover{
+    background-color : #FF9D00;
+    color: white;
+    transition: 0.3s;
+} 
 
 .notice {
     display: flex;
@@ -273,7 +281,7 @@ body {
     height: auto;
     background-color: rgb(243, 243, 243);
     padding: 55px;
-    margin-bottom: 208px;
+    margin: 170px;
     border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
 }
@@ -413,86 +421,118 @@ body {
 
 
 // 팝업
+.intake_3{
+    display: flex;
+    justify-content: center
+}
+.intake_3 > button{
+    width: 250px;
+    max-width: 100%;
+    height: 80px;
+    padding: 0;
+    font-family: "Paperlogy";
+    font-size: 30px;
+    font-weight: 600;
+    background-color: #f8f8f8;
+    color: #3A302E;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.intake_3 > button:hover{
+    background-color : #FF9D00;
+    color: white;
+    transition: 0.3s;
+}
 
 .intake_popup {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.6);
     backdrop-filter: blur(5px);
-    overflow-y: auto;
+    overflow-y: auto; 
+    display: none;
 }
-
 .modal-content {
     background-color: #F3F3F3;
-    margin: 5% auto;
-    padding: 40px 5%;
+    margin: 0 auto;
+    padding: 40px 5%; 
     width: 90%;
-    max-width: 600px;
+    max-width: 600px; 
     border-radius: 20px;
     position: relative;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     box-sizing: border-box;
 }
-
 .close-btn {
     position: absolute;
-    right: 20px;
-    top: 15px;
+    right: 20px; top: 15px;
     font-size: 30px;
     cursor: pointer;
     color: #3A302E;
 }
-
-.modal-content>h2 {
+.modal-content > h2 {
     font-family: 'GmarketSans';
     font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
     color: #3A302E;
 }
-
 .intakeForm {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 .intake_input {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     gap: 8px;
 }
-
-.intake_input>label {
+.intake_input > label {
     font-family: 'GmarketSans';
     font-weight: 500;
-    font-size: 18px;
+    font-size: 18px; 
 }
-
-.intake_input>input[type="text"],
-.intake_input>input[type="tel"],
-.intake_input>textarea {
+.intake_input > input[type="text"],
+.intake_input > input[type="tel"],
+.intake_input > textarea {
     font-family: 'GmarketSans';
     font-weight: 500;
     font-size: 16px;
-    border: 1px solid #ddd;
+    border: 1px solid #ddd; 
     border-radius: 8px;
     padding: 12px;
-    width: 100%;
-    box-sizing: border-box;
+    width: 100%; 
+    box-sizing: border-box; 
 }
-
-.intake_input>textarea {
+.intake_input input[type="checkbox"]:focus {
+    accent-color: #FF9D00 ;
+    outline: 2px solid #FF9D00;
+}
+.intake_input input:focus, 
+.intake_input textarea:focus {
+    border-color: rgba(255, 157, 0, 0.3);
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 157, 0, 0.5);
+    transition: all 0.3s ease;
+}
+.intake_input > textarea {
     min-height: 120px;
     max-height: 200px;
-    max-width: 100%;
-    min-width: 100%;
-    resize: vertical;
+    max-width: 100%; 
+    min-width: 100%; 
+    resize: vertical; 
+}
+.intake_input:has(input[type="checkbox"]) {
+    flex-direction: row; 
+    align-items: center;
 }
 
 .submit-btn {
@@ -525,7 +565,7 @@ body {
 /* =========================
    Tablet (<= 1024px)
    ========================= */
-@media (max-width: 1450px) {
+@media (max-width: 1024px) {
 
 
     .section-header {
@@ -642,7 +682,7 @@ body {
 
 
 
-@media (max-width: 1450px) {
+@media (max-width: 1024px) {
     .intro-top {
         flex-direction: column;
         align-items: center;
